@@ -42,6 +42,7 @@ Example usage in Nix flake is:
           patches = (old.patches or []) ++ [
             (final.fetchpatch {
             url = "https://tildearrow.org/storage/hostapd-2.10-lar.patch";
+            #url = "https://github.com/randomizedcoder/tildearrow_hostapd_patch/hostapd-2.10-lar.patch";
             sha256 = "USiHBZH5QcUJfZSxGoFwUefq3ARc4S/KliwUm8SqvoI=";
           })
         ];
